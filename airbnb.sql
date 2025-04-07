@@ -1,13 +1,19 @@
 -- create airbnb database
 CREATE DATABASE airbnb;
 
-CREATE TABLE category(
-id INT PRIMARY KEY,
-category_name varchar(50) NOT NULL
+USE airbnb;
+-- Create the region table
+CREATE TABLE region(
+id INT AUTO_INCREMENT PRIMARY KEY,
+region_name varchar(20) NOT NULL
 );
 
--- Create attribute_category table
-CREATE TABLE attribute_category (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    category_name VARCHAR(255) NOT NULL
-);
+-- Insert data into the table
+INSERT INTO region(region_name) 
+VALUES
+    ('Eldoret'),
+    ('Bungoma'),
+    ('Kisii'),
+    ('Kakamega'),
+    ('Machakos'),
+    ('Busia');
