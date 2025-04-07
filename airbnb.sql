@@ -1,13 +1,18 @@
--- create airbnb database
-CREATE DATABASE airbnb;
+-- -- create airbnb database
+-- CREATE DATABASE airbnb;
 
-CREATE TABLE category(
-id INT PRIMARY KEY,
-category_name varchar(50) NOT NULL
-);
+-- CREATE TABLE category(
+-- id INT PRIMARY KEY,
+-- category_name varchar(50) NOT NULL
+-- );
 
--- Create attribute_category table
-CREATE TABLE attribute_category (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    category_name VARCHAR(255) NOT NULL
+-- -- Create attribute_category table
+-- CREATE TABLE attribute_category (
+--     id INT AUTO_INCREMENT PRIMARY KEY,
+--     category_name VARCHAR(255) NOT NULL
+-- );
+-- creating a language table
+create table language(
+    id int primary key, AUTO_INCREMENT,
+    language_name varchar(100)
 );
