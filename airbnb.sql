@@ -11,3 +11,8 @@ CREATE TABLE attribute_category (
     id INT AUTO_INCREMENT PRIMARY KEY,
     category_name VARCHAR(255) NOT NULL
 );
+-- creating a language table
+CREATE TABLE language(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    language_name VARCHAR(100)
+);
