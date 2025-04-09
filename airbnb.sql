@@ -1,13 +1,14 @@
 -- create airbnb database
 CREATE DATABASE airbnb;
 
-CREATE TABLE category(
-id INT PRIMARY KEY,
-category_name varchar(50) NOT NULL
-);
+USE airbnb;
 
--- Create attribute_category table
-CREATE TABLE attribute_category (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    category_name VARCHAR(255) NOT NULL
+CREATE TABLE user_account (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    first_Name VARCHAR(50) NOT NULL,
+    last_Name VARCHAR(50) NOT NULL,
+    email_address VARCHAR(50) NOT NULL UNIQUE,
+    user_password VARCHAR(50) NOT NULL,
+    joined_date DATE NOT NULL,
+    date_host_started DATE NULL
 );
