@@ -1,7 +1,4 @@
--- create airbnb database
-CREATE DATABASE airbnb;
 
-USE airbnb;
 
 CREATE TABLE user_account (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
