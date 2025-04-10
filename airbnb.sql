@@ -1,13 +1,10 @@
--- create airbnb database
-CREATE DATABASE airbnb;
-
-CREATE TABLE category(
-id INT PRIMARY KEY,
-category_name varchar(50) NOT NULL
+CREATE TABLE booking_status (
+id INT AUTO_INCREMENT PRIMARY KEY,  
+status_name VARCHAR(50) NOT NULL,    
+UNIQUE (status_name)
 );
 
--- Create attribute_category table
-CREATE TABLE attribute_category (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    category_name VARCHAR(255) NOT NULL
-);
+INSERT INTO booking_status (status_name) VALUES 
+('Awaiting Approval'), 
+('Approved'), 
+('Cancelled');
