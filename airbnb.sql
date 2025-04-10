@@ -11,3 +11,9 @@ CREATE TABLE attribute_category (
     id INT AUTO_INCREMENT PRIMARY KEY,
     category_name VARCHAR(255) NOT NULL
 );
+
+-- Place Type
+CREATE TABLE place_type (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    type_name VARCHAR(50)
+);
