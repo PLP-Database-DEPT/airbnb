@@ -13,26 +13,6 @@ CREATE TABLE attribute_category (
 );
 
 
-
--- creates table reviews with relationships
--- creats properties table
-CREATE TABLE properties (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    categories_name VARCHAR(100) 
-);
-
--- creates users table
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(100) 
-);
-
--- creates booking_status table
-CREATE TABLE booking_status (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    status_name VARCHAR(50) 
-);
-
 -- creates table booking with relationships
 CREATE TABLE bookings (
     id INT AUTO_INCREMENT PRIMARY KEY,
