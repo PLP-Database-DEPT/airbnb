@@ -1,3 +1,16 @@
+-- create airbnb database
+CREATE DATABASE airbnb;
+
+CREATE TABLE category(
+id INT PRIMARY KEY,
+category_name varchar(50) NOT NULL
+);
+
+-- Create attribute_category table
+CREATE TABLE attribute_category (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category_name VARCHAR(255) NOT NULL
+);
 CREATE TABLE property (
     id INT PRIMARY KEY AUTO_INCREMENT,
     location_id INT,
@@ -19,4 +32,3 @@ CREATE TABLE property (
     FOREIGN KEY (place_type_id) REFERENCES place_type(id),
     FOREIGN KEY (property_type_id) REFERENCES property_type(id),
     FOREIGN KEY (host_id) REFERENCES host(id)
-);
