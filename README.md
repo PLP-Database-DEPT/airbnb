@@ -28,6 +28,13 @@
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/AAbide">
+                    <img src="https://avatars.githubusercontent.com/u/200578410?v=4" width="100;" alt="AAbide"/>
+                    <br />
+                    <sub><b>Abidemi Adewale</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/shadrack-ago">
                     <img src="https://avatars.githubusercontent.com/u/100674408?v=4" width="100;" alt="shadrack-ago"/>
                     <br />
