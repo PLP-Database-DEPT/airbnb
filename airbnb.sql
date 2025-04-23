@@ -12,9 +12,6 @@ CREATE TABLE attribute_category (
     category_name VARCHAR(255) NOT NULL
 );
 
--- Creating countries table
--- ensures no duplicate entries for the countries
--- for this to work effectively,the table region must exist
 CREATE TABLE country (
     id INT AUTO_INCREMENT PRIMARY KEY,
     region_id INT NOT NULL,
@@ -22,3 +19,26 @@ CREATE TABLE country (
     description TEXT,
     FOREIGN KEY (region_id) REFERENCES region(id)
 );
+
+CREATE TABLE property (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    location_id INT,
+    place_type_id INT,
+    property_type_id INT,
+    host_id INT,
+    nightly_price DECIMAL(10,2),
+    property_name VARCHAR(100),
+    num_guests INT,
+    num_beds INT,
+    num_bedrooms INT,
+    num_bathrooms INT,
+    is_guest_favourite TINYINT(1),  -- 0 for No, 1 for Yes
+    description TEXT,
+    address_line_1 VARCHAR(250),
+    address_line_2 VARCHAR(250),
+
+    FOREIGN KEY (location_id) REFERENCES location(id),
+    FOREIGN KEY (place_type_id) REFERENCES place_type(id),
+    FOREIGN KEY (property_type_id) REFERENCES property_type(id),
+    FOREIGN KEY (host_id) REFERENCES host(id)
+  );
