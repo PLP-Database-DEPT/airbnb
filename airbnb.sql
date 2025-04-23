@@ -29,6 +29,14 @@ CREATE TABLE attribute_category (
     id INT AUTO_INCREMENT PRIMARY KEY,
     category_name VARCHAR(255) NOT NULL
 );
+
+CREATE TABLE property_category (
+    property_id INT NOT NULL,
+    category_id INT NOT NULL,
+    PRIMARY KEY (property_id, category_id),
+    FOREIGN KEY (property_id) REFERENCES property(id),
+    FOREIGN KEY (category_id) REFERENCES category(id)
+);
 -- creating a language table
 CREATE TABLE language(
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -82,4 +90,3 @@ CREATE TABLE property (
     FOREIGN KEY (property_type_id) REFERENCES property_type(id),
     FOREIGN KEY (host_id) REFERENCES host(id)
   );
-
