@@ -21,6 +21,13 @@
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/lonyamasi">
+                    <img src="https://avatars.githubusercontent.com/u/147608409?v=4" width="100;" alt="lonyamasi"/>
+                    <br />
+                    <sub><b>Lynda Onyamasi</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/shadrack-ago">
                     <img src="https://avatars.githubusercontent.com/u/100674408?v=4" width="100;" alt="shadrack-ago"/>
                     <br />
