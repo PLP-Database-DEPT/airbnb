@@ -11,6 +11,15 @@ CREATE TABLE attribute_category (
     id INT AUTO_INCREMENT PRIMARY KEY,
     category_name VARCHAR(255) NOT NULL
 );
+
+CREATE TABLE country (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    region_id INT NOT NULL,
+    country_name VARCHAR(255) UNIQUE NOT NULL,
+    description TEXT,
+    FOREIGN KEY (region_id) REFERENCES region(id)
+);
+
 CREATE TABLE property (
     id INT PRIMARY KEY AUTO_INCREMENT,
     location_id INT,
@@ -32,3 +41,4 @@ CREATE TABLE property (
     FOREIGN KEY (place_type_id) REFERENCES place_type(id),
     FOREIGN KEY (property_type_id) REFERENCES property_type(id),
     FOREIGN KEY (host_id) REFERENCES host(id)
+  );
