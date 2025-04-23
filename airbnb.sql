@@ -1,3 +1,9 @@
+CREATE TABLE booking_status (
+id INT AUTO_INCREMENT PRIMARY KEY,  
+status_name VARCHAR(50) NOT NULL,    
+UNIQUE (status_name)
+);
+
 -- Place Type
 CREATE TABLE place_type (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -76,3 +82,4 @@ CREATE TABLE property (
     FOREIGN KEY (property_type_id) REFERENCES property_type(id),
     FOREIGN KEY (host_id) REFERENCES host(id)
   );
+
